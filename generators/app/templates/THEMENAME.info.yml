@@ -1,0 +1,18 @@
+name: <%= project_name %>
+type: theme
+description: '<%= project_name %> project theme'
+package: ratio
+core: 8.x
+libraries:
+  - <%= project_name %>/global-styling
+  - <%= project_name %>/global-scripts
+  - <%= project_name %>/bootstrap-scripts
+
+base theme: false
+
+regions:
+  header: Header
+  breadcrumb: Breadcrumb
+  content: Content
+  footer: Footer
+

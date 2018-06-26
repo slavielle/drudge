@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Sylvain LAVIELLE",
+      "authorEmail": "sylvain.lavielle@netelios.fr",
+      "authorUrl": ""
+    }
+  }
+}
