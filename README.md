@@ -1,5 +1,15 @@
 # generator-drudge [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> netelios.fr dart -  drupal theme generator
+> Drudge -  drupal theme generator
+
+Drudge is a Yeoman generator allowing to scaffold a basic Drupal theme maintely based on : 
+
+- Bootstrap 4.x
+- Browserify
+- Npm as front js lib packager
+- Gulp
+
+It implements front-end techniques I leaned along projects many of them thanks to jlo aka Julien Lopinto.
+
 
 ## Installation
 
@@ -16,11 +26,8 @@ Then generate your new project:
 yo drudge
 ```
 
-## Getting To Know Yeoman
+## About Yeoman
 
- * Yeoman has a heart of gold.
- * Yeoman is a person with feelings and opinions, but is very easy to work with.
- * Yeoman can be too opinionated at times but is easily convinced not to be.
  * Feel free to [learn more about Yeoman](http://yeoman.io/).
 
 ## License
