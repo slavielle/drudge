@@ -8,7 +8,7 @@ Drudge is a Yeoman generator allowing to scaffold a basic Drupal theme maintely 
 - Npm as front js lib packager
 - Gulp
 
-It implements front-end techniques I leaned along projects many of them thanks to jlo aka Julien Lopinto.
+It implements front-end techniques I leaned along projects some of them thanks to jlo aka Julien Lopinto.
 
 
 ## Installation
