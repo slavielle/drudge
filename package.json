@@ -1,7 +1,7 @@
 {
   "name": "generator-drudge",
   "version": "0.0.0",
-  "description": "netelios.fr dart -  drupal theme generator",
+  "description": "Drudge - a Drupal theme generator powered by Yeoman",
   "homepage": "",
   "author": {
     "name": "Sylvain LAVIELLE",
