@@ -1,0 +1,7 @@
+// /!\ This SASS file is generated using gulp task.
+// DO NOT CHANGE ITS CONTENT DIRECTLY.
+// Source file : <%= source %>
+
+$grid-breakpoints: (<% breakpoints.forEach(function(item){ %>
+  <%= item.name%>: <%= item.pixel_value%>px,<% }) %>
+);

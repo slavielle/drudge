@@ -1,5 +1,8 @@
 // Override bootstrap variable
 // @see https://getbootstrap.com/docs/4.1/getting-started/theming/#variable-defaults
-@import "common/_boostrap-variables.scss";
 
+@import "common/_boostrap-variables.scss";
+@import "common/_boostrap-breakpoints.scss";
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+

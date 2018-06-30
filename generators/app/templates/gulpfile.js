@@ -4,6 +4,8 @@ var gulp = require("gulp");
 require('gulp-stats')(gulp);
 
 // Single tasks
+
+gulp.task("breakpoints", require("./gulp/tasks/breakpoints"));
 gulp.task("scripts", require("./gulp/tasks/scripts"));
 gulp.task("styles", require("./gulp/tasks/styles"));
 // gulp.task("fonts", require("./gulp/tasks/fonts"));
@@ -15,11 +17,15 @@ gulp.task("clean", require("./gulp/tasks/clean"));
 
 // Meta tasks
 // gulp.task("build", ["image","styles", "scripts", "fonts", "svg", "metas"]);
-gulp.task("build", ["styles", "scripts"]);
+gulp.task("build", ["breakpoints", "styles", "scripts"]);
+
+gulp.task("prepare", ["breakpoints"], function() {
+  gulp.start('build');
+});
 
 // default tasks
 gulp.task("default", ["clean"], function() {
-  gulp.start('build');
+  gulp.start('prepare');
 });
 
 // dev tasks

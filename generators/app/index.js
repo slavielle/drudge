@@ -56,6 +56,11 @@ module.exports = class extends Generator {
       this.destinationPath(path.join(this.props.project_name, 'gulp')),
       { project_name: this.props.project_name }
     );
+    this.fs.copyTpl(
+      this.templatePath('gulp/options.js'),
+      this.destinationPath(path.join(this.props.project_name, 'gulp/options.js')),
+      { project_name: this.props.project_name }
+    );
     this.fs.copy(
       this.templatePath('gulpfile.js'),
       this.destinationPath(path.join(this.props.project_name, 'gulpfile.js')),

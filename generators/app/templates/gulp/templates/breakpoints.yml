@@ -1,0 +1,11 @@
+# /!\ This YAML file is generated using gulp task.
+# DO NOT CHANGE ITS CONTENT DIRECTLY.
+# Source file : <%= source %>
+<% breakpoints.forEach(function(item, index){ if (item.targets && item.targets.drupal){ %>
+<%= theme_name %>.<%= item.name %>:
+  label: <%= item.name %>
+  mediaQuery: '<%= item._.drupal_mediaquery %>'
+  weight: <%= index %>
+  multipliers:<% item.targets.drupal.multipliers.forEach(function(multiplier){ %>
+    - <%= multiplier %><%})%>
+<% }}) %>
